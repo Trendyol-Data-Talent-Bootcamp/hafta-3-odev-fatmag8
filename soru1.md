@@ -6,5 +6,4 @@ select name,car.id as car_id, car.model as car_model,manufacture.year as manufac
 from fatma_gezer.semi_structured_hw
 cross join unnest(car) as car
 cross join unnest(manufacture) as manufacture on car.id = manufacture.id 
-cross join unnest(purchase) as p on car.id = p.id
 ```
